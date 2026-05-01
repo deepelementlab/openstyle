@@ -11,6 +11,11 @@
   <strong>Automated Design System Extractor for HTML Templates. Automatically extract design tokens from any HTML/CSS website template and generate structured design specifications with interactive preview pages.</strong>
 </p>
 
+<p align="center">
+  <a href="README.md">English</a> |
+  <a href="README.zh.md">简体中文</a>
+</p>
+
 ---
 
 ## Overview
