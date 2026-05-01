@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System Preview: moban2603 (Dark)</title>
+  <style>
+    :root {
+      --black: #ededed;
+      --white: #0a0a0a;
+      --gray-100: #2a2a2a;
+      --gray-600: #a0a0a0;
+      --link-blue: #FECE1A;
+      --focus-blue: hsl(212,100%,48%);
+      --shadow-ring: rgba(255,255,255,0.10) 0px 0px 0px 1px;
+      --shadow-ring-light: rgba(255,255,255,0.08) 0px 0px 0px 1px;
+      --source-bg: #ffffff;
+      --source-fg: #181A1C;
+      --font-sans: system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: var(--font-sans); background: var(--white); color: var(--black); }
+    .nav { position: sticky; top: 0; background: color-mix(in srgb, var(--white), transparent 8%); padding: 12px 24px; box-shadow: var(--shadow-ring); display: flex; justify-content: space-between; }
+    .hero { padding: 56px 24px; text-align: center; }
+    .hero h1 { margin: 0 0 8px; font-size: 42px; letter-spacing: -1.2px; }
+    .hero p { color: var(--gray-600); max-width: 720px; margin: 0 auto; }
+    .section { padding: 36px 24px; border-top: 1px solid var(--gray-100); }
+    .section h2 { margin: 0 0 16px; font-size: 26px; letter-spacing: -0.4px; }
+    .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+    .swatch { border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-ring); }
+    .swatch-color { height: 72px; }
+    .swatch-info { padding: 8px; font-size: 12px; }
+    .card-row { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card { border-radius: 8px; padding: 16px; box-shadow: var(--shadow-ring); background: var(--white); }
+    .btn { display: inline-block; padding: 9px 14px; border-radius: 6px; text-decoration: none; box-shadow: var(--shadow-ring-light); color: var(--black); }
+    .muted { color: var(--gray-600); }
+    .tokens { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pill { border-radius: 9999px; box-shadow: var(--shadow-ring); padding: 4px 10px; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <strong>OpenStyle / moban2603</strong>
+    <span>Dark Preview</span>
+  </div>
+
+  <section class="hero">
+    <h1>Design System Preview</h1>
+    <p>Auto-generated preview page based on extracted HTML/CSS tokens, including colors, typography and component primitives.</p>
+  </section>
+
+  <section class="section">
+    <h2>Colors</h2>
+    <div class="grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background: #ffffff;"></div>
+        <div class="swatch-info">
+          <div><strong>#ffffff</strong></div>
+          <div class="muted">primary / primary</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #FECE1A;"></div>
+        <div class="swatch-info">
+          <div><strong>#FECE1A</strong></div>
+          <div class="muted">accent / accent</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #0088cc;"></div>
+        <div class="swatch-info">
+          <div><strong>#0088cc</strong></div>
+          <div class="muted">accent / accent</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #f89406;"></div>
+        <div class="swatch-info">
+          <div><strong>#f89406</strong></div>
+          <div class="muted">accent / accent</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #ee5f5b;"></div>
+        <div class="swatch-info">
+          <div><strong>#ee5f5b</strong></div>
+          <div class="muted">accent / accent</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #ffffff;"></div>
+        <div class="swatch-info">
+          <div><strong>#ffffff</strong></div>
+          <div class="muted">neutral / neutral</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: rgba(255, 255, 255, 0.15);"></div>
+        <div class="swatch-info">
+          <div><strong>rgba(255, 255, 255, 0.15)</strong></div>
+          <div class="muted">neutral / neutral</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #181A1C;"></div>
+        <div class="swatch-info">
+          <div><strong>#181A1C</strong></div>
+          <div class="muted">neutral / neutral</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: rgba(0, 0, 0, 0.1);"></div>
+        <div class="swatch-info">
+          <div><strong>rgba(0, 0, 0, 0.1)</strong></div>
+          <div class="muted">neutral / neutral</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Typography</h2>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: &#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif; font-size: 14.0px; font-weight: normal; line-height: 20px; letter-spacing: -1px;">
+        Display sample text
+      </div>
+      <div class="muted" style="font-size:12px;">&#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif / 14.0px / normal</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: &#34;Porta&#34;; font-size: 20.0px; font-weight: bold; line-height: 0; letter-spacing: -1px;">
+        Heading sample text
+      </div>
+      <div class="muted" style="font-size:12px;">&#34;Porta&#34; / 20.0px / bold</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: &#34;porta&#34;; font-size: 17.5px; font-weight: 200; line-height: 30px; letter-spacing: -1px;">
+        Sub-heading sample text
+      </div>
+      <div class="muted" style="font-size:12px;">&#34;porta&#34; / 17.5px / 200</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: Arial; font-size: 11.9px; font-weight: 100; line-height: 1; letter-spacing: -1px;">
+        Body sample text
+      </div>
+      <div class="muted" style="font-size:12px;">Arial / 11.9px / 100</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: inherit; font-size: 0.0px; font-weight: lighter; line-height: 40px; letter-spacing: -1px;">
+        Caption sample text
+      </div>
+      <div class="muted" style="font-size:12px;">inherit / 0.0px / lighter</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: Monaco, Menlo, Consolas, &#34;Courier New&#34;, monospace; font-size: 12.0px; font-weight: 300; line-height: normal; letter-spacing: -1px;">
+        Button sample text
+      </div>
+      <div class="muted" style="font-size:12px;">Monaco, Menlo, Consolas, &#34;Courier New&#34;, monospace / 12.0px / 300</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: Monaco, Menlo, Consolas, &#34;Courier New&#34;, monospace; font-size: 15.0px; font-weight: 300; line-height: normal; letter-spacing: -1px;">
+        Mono sample text
+      </div>
+      <div class="muted" style="font-size:12px;">Monaco, Menlo, Consolas, &#34;Courier New&#34;, monospace / 15.0px / 300</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: Monaco, Menlo, Consolas, &#34;Courier New&#34;, monospace; font-size: 10.5px; font-weight: 300; line-height: normal; letter-spacing: -1px;">
+        Label sample text
+      </div>
+      <div class="muted" style="font-size:12px;">Monaco, Menlo, Consolas, &#34;Courier New&#34;, monospace / 10.5px / 300</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Components</h2>
+    <div class="card-row">
+      <article class="card">
+        <h3>Button</h3>
+        <a class="btn" href="#">Primary Action</a>
+      </article>
+      <article class="card">
+        <h3>Card</h3>
+        <p class="muted">Container sample with extracted border/shadow style.</p>
+      </article>
+      <article class="card">
+        <h3>Form</h3>
+        <input style="width:100%;padding:8px;border:none;box-shadow:var(--shadow-ring);border-radius:6px;background:var(--white);color:var(--black);" placeholder="Input sample">
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Spacing / Radius / Shadow Tokens</h2>
+    <div class="tokens">
+<span class="pill">space 0</span><span class="pill">space 10px</span><span class="pill">space 15px</span><span class="pill">space 5px</span><span class="pill">space 20px</span><span class="pill">space 4px</span><span class="pill">space 9px</span><span class="pill">space 3px</span><span class="pill">radius 4px</span><span class="pill">radius 0</span><span class="pill">radius 6px</span><span class="pill">radius 3px</span><span class="pill">radius 0 4px 4px 0</span><span class="pill">radius 4px 0 0 4px</span><span class="pill">radius 5px</span><span class="pill">shadow 1</span><span class="pill">shadow 2</span><span class="pill">shadow 3</span><span class="pill">shadow 4</span><span class="pill">shadow 5</span>    </div>
+  </section>
+</body>
+</html>

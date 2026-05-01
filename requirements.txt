@@ -1,0 +1,8 @@
+beautifulsoup4
+click
+cssutils
+jinja2
+colormath
+deep-translator
+pypinyin
+pytest

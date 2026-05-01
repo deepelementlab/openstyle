@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System Preview: moban4024 (Dark)</title>
+  <style>
+    :root {
+      --black: #ededed;
+      --white: #0a0a0a;
+      --gray-100: #2a2a2a;
+      --gray-600: #a0a0a0;
+      --link-blue: #337ab7;
+      --focus-blue: hsl(212,100%,48%);
+      --shadow-ring: rgba(255,255,255,0.10) 0px 0px 0px 1px;
+      --shadow-ring-light: rgba(255,255,255,0.08) 0px 0px 0px 1px;
+      --source-bg: #fff;
+      --source-fg: #000;
+      --font-sans: system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: var(--font-sans); background: var(--white); color: var(--black); }
+    .nav { position: sticky; top: 0; background: color-mix(in srgb, var(--white), transparent 8%); padding: 12px 24px; box-shadow: var(--shadow-ring); display: flex; justify-content: space-between; }
+    .hero { padding: 56px 24px; text-align: center; }
+    .hero h1 { margin: 0 0 8px; font-size: 42px; letter-spacing: -1.2px; }
+    .hero p { color: var(--gray-600); max-width: 720px; margin: 0 auto; }
+    .section { padding: 36px 24px; border-top: 1px solid var(--gray-100); }
+    .section h2 { margin: 0 0 16px; font-size: 26px; letter-spacing: -0.4px; }
+    .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+    .swatch { border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-ring); }
+    .swatch-color { height: 72px; }
+    .swatch-info { padding: 8px; font-size: 12px; }
+    .card-row { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card { border-radius: 8px; padding: 16px; box-shadow: var(--shadow-ring); background: var(--white); }
+    .btn { display: inline-block; padding: 9px 14px; border-radius: 6px; text-decoration: none; box-shadow: var(--shadow-ring-light); color: var(--black); }
+    .muted { color: var(--gray-600); }
+    .tokens { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pill { border-radius: 9999px; box-shadow: var(--shadow-ring); padding: 4px 10px; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <strong>OpenStyle / moban4024</strong>
+    <span>Dark Preview</span>
+  </div>
+
+  <section class="hero">
+    <h1>Design System Preview</h1>
+    <p>Auto-generated preview page based on extracted HTML/CSS tokens, including colors, typography and component primitives.</p>
+  </section>
+
+  <section class="section">
+    <h2>Colors</h2>
+    <div class="grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background: #fcf8e3;"></div>
+        <div class="swatch-info">
+          <div><strong>#fcf8e3</strong></div>
+          <div class="muted">primary / primary</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #337ab7;"></div>
+        <div class="swatch-info">
+          <div><strong>#337ab7</strong></div>
+          <div class="muted">accent / accent</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #1d2f3b;"></div>
+        <div class="swatch-info">
+          <div><strong>#1d2f3b</strong></div>
+          <div class="muted">accent / accent</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #3c763d;"></div>
+        <div class="swatch-info">
+          <div><strong>#3c763d</strong></div>
+          <div class="muted">accent / accent</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #8a6d3b;"></div>
+        <div class="swatch-info">
+          <div><strong>#8a6d3b</strong></div>
+          <div class="muted">accent / accent</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #fff;"></div>
+        <div class="swatch-info">
+          <div><strong>#fff</strong></div>
+          <div class="muted">neutral / neutral</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: rgba(255, 255, 255, 0.15);"></div>
+        <div class="swatch-info">
+          <div><strong>rgba(255, 255, 255, 0.15)</strong></div>
+          <div class="muted">neutral / neutral</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #000;"></div>
+        <div class="swatch-info">
+          <div><strong>#000</strong></div>
+          <div class="muted">neutral / neutral</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #ddd;"></div>
+        <div class="swatch-info">
+          <div><strong>#ddd</strong></div>
+          <div class="muted">neutral / neutral</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Typography</h2>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: &#34;Josefin Slab&#34;, Arial, serif; font-size: 12.0px; font-weight: normal; line-height: 1.42857; letter-spacing: normal;">
+        Display sample text
+      </div>
+      <div class="muted" style="font-size:12px;">&#34;Josefin Slab&#34;, Arial, serif / 12.0px / normal</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: &#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif; font-size: 18.0px; font-weight: bold; line-height: 1.5; letter-spacing: 3px;">
+        Heading sample text
+      </div>
+      <div class="muted" style="font-size:12px;">&#34;Helvetica Neue&#34;, Helvetica, Arial, sans-serif / 18.0px / bold</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: &#34;Sacramento&#34;, cursive; font-size: 14.0px; font-weight: 700; line-height: 1; letter-spacing: 0;">
+        Sub-heading sample text
+      </div>
+      <div class="muted" style="font-size:12px;">&#34;Sacramento&#34;, cursive / 14.0px / 700</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: &#34;icomoon&#34;; font-size: 20.0px; font-weight: 400; line-height: 0; letter-spacing: 2px;">
+        Body sample text
+      </div>
+      <div class="muted" style="font-size:12px;">&#34;icomoon&#34; / 20.0px / 400</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: inherit; font-size: 16.0px; font-weight: 300; line-height: 1.33333; letter-spacing: 2px;">
+        Caption sample text
+      </div>
+      <div class="muted" style="font-size:12px;">inherit / 16.0px / 300</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: &#34;flexslider-icon&#34;; font-size: 24.0px; font-weight: 500; line-height: 30px; letter-spacing: 2px;">
+        Button sample text
+      </div>
+      <div class="muted" style="font-size:12px;">&#34;flexslider-icon&#34; / 24.0px / 500</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: &#34;flexslider-icon&#34;; font-size: 13.0px; font-weight: 500; line-height: 30px; letter-spacing: 2px;">
+        Mono sample text
+      </div>
+      <div class="muted" style="font-size:12px;">&#34;flexslider-icon&#34; / 13.0px / 500</div>
+    </div>
+    <div style="margin-bottom:10px;">
+      <div style="font-family: &#34;flexslider-icon&#34;; font-size: 40.0px; font-weight: 500; line-height: 30px; letter-spacing: 2px;">
+        Label sample text
+      </div>
+      <div class="muted" style="font-size:12px;">&#34;flexslider-icon&#34; / 40.0px / 500</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Components</h2>
+    <div class="card-row">
+      <article class="card">
+        <h3>Button</h3>
+        <a class="btn" href="#">Primary Action</a>
+      </article>
+      <article class="card">
+        <h3>Card</h3>
+        <p class="muted">Container sample with extracted border/shadow style.</p>
+      </article>
+      <article class="card">
+        <h3>Form</h3>
+        <input style="width:100%;padding:8px;border:none;box-shadow:var(--shadow-ring);border-radius:6px;background:var(--white);color:var(--black);" placeholder="Input sample">
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Spacing / Radius / Shadow Tokens</h2>
+    <div class="tokens">
+<span class="pill">space 0</span><span class="pill">space 20px</span><span class="pill">space 10px</span><span class="pill">space 5px</span><span class="pill">space 15px</span><span class="pill">space 40px</span><span class="pill">space 8px</span><span class="pill">space 4px</span><span class="pill">radius 4px</span><span class="pill">radius 6px</span><span class="pill">radius 0</span><span class="pill">radius 3px</span><span class="pill">radius 50%</span><span class="pill">radius 10px</span><span class="pill">radius 4px 4px 0 0</span><span class="pill">shadow 1</span><span class="pill">shadow 2</span><span class="pill">shadow 3</span><span class="pill">shadow 4</span><span class="pill">shadow 5</span>    </div>
+  </section>
+</body>
+</html>

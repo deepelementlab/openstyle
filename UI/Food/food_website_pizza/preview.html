@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System Preview: moban3128 (Light)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fff;
+    --fg: #000;
+    --accent: #007bff;
+    --border: #dee2e6;
+    --weak: rgba(23,23,23,0.55);
+    --surface: #f8f9fa;
+    --font: 'Inter', -apple-system, system-ui, Segoe UI, Roboto, sans-serif;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ── Navigation ── */
+  .nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 24px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-brand { font-size: 14px; font-weight: 600; color: var(--fg); text-decoration: none; letter-spacing: 0.02em; }
+  .nav-links { display: flex; gap: 20px; list-style: none; }
+  .nav-links a { font-size: 14px; font-weight: 500; color: var(--fg); text-decoration: none; letter-spacing: 0.02em; opacity: 0.75; transition: opacity 0.15s; }
+  .nav-links a:hover { opacity: 1; }
+  .nav-cta {
+    display: inline-block; background: var(--accent); color: var(--bg);
+    padding: 10px 20px; border-radius: 10px; font-size: 14px; font-weight: 600;
+    text-decoration: none; letter-spacing: 0.02em; transition: opacity 0.15s;
+  }
+  .nav-cta:hover { opacity: 0.88; }
+
+  /* ── Hero ── */
+  .hero { padding: 72px 24px 56px; text-align: center; }
+  .hero h1 { font-size: 44px; font-weight: 700; line-height: 1.12; margin-bottom: 16px; letter-spacing: -0.02em; }
+  .hero h1 span { color: var(--accent); }
+  .hero p { font-size: 18px; color: var(--weak); max-width: 540px; margin: 0 auto 28px; line-height: 1.5; }
+  .hero-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+  /* ── Buttons ── */
+  .btn-primary {
+    display: inline-block; background: var(--accent); color: #fff;
+    padding: 14px 28px; border-radius: 10px; font-size: 15px; font-weight: 600;
+    text-decoration: none; border: none; transition: opacity 0.15s; letter-spacing: 0.01em;
+  }
+  .btn-primary:hover { opacity: 0.88; }
+  .btn-outline {
+    display: inline-block; background: transparent; color: var(--fg);
+    padding: 14px 28px; border-radius: 10px; font-size: 15px; font-weight: 600;
+    text-decoration: none; border: 1.5px solid var(--fg); transition: opacity 0.15s;
+  }
+  .btn-outline:hover { opacity: 0.75; }
+  .btn-ghost {
+    display: inline-block; background: var(--surface); color: var(--fg);
+    padding: 14px 28px; border-radius: 10px; font-size: 15px; font-weight: 500;
+    text-decoration: none; border: 1px solid var(--border); transition: opacity 0.15s;
+  }
+
+  /* ── Sections ── */
+  .section { padding: 48px 24px; max-width: 1100px; margin: 0 auto; }
+  .section-label { font-size: 13px; font-weight: 600; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; }
+  .section-title { font-size: 36px; font-weight: 700; line-height: 1.2; margin-bottom: 24px; letter-spacing: -0.01em; }
+  .section-divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+
+  /* ── Color Palette ── */
+  .color-group-label { font-size: 12px; font-weight: 600; color: var(--weak); margin: 18px 0 8px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .color-group-label:first-child { margin-top: 0; }
+  .color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin-bottom: 8px; }
+  .color-swatch { border-radius: 12px; overflow: hidden; border: 1px solid var(--border); transition: transform 0.15s, box-shadow 0.15s; }
+  .color-swatch:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+  .color-swatch-block { height: 60px; }
+  .color-swatch-info { padding: 8px 10px; }
+  .color-swatch-name { font-size: 12px; font-weight: 600; letter-spacing: 0.01em; margin-bottom: 2px; }
+  .color-swatch-hex { font-size: 10px; color: var(--weak); font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; }
+
+  /* ── Typography ── */
+  .type-sample { margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+  .type-sample:last-child { border-bottom: none; }
+  .type-meta { font-size: 10px; color: var(--weak); margin-top: 6px; font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; letter-spacing: 0.02em; }
+
+  /* ── Button Showcase ── */
+  .button-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .button-item { text-align: center; }
+  .button-label { font-size: 10px; color: var(--weak); margin-top: 6px; font-weight: 500; }
+
+  /* ── Cards ── */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--bg); border: 1px solid var(--border); border-radius: 14px;
+    padding: 24px; transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .card h3 { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.3; margin-bottom: 8px; }
+  .card p { font-size: 14px; color: var(--weak); line-height: 1.5; }
+  .card-tag { display: inline-block; font-size: 10px; font-weight: 600; color: var(--accent); background: var(--surface); border: 1px solid var(--border); padding: 2px 8px; border-radius: 6px; margin-bottom: 10px; letter-spacing: 0.03em; text-transform: uppercase; }
+
+  /* ── Forms ── */
+  .form-group { margin-bottom: 14px; max-width: 400px; }
+  .form-label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 5px; letter-spacing: 0.01em; }
+  .form-input {
+    width: 100%; background: var(--bg); color: var(--fg);
+    border: 1px solid var(--border); padding: 12px 16px; border-radius: 10px;
+    font-family: var(--font); font-size: 15px; outline: none; transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .form-input:focus { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+  .form-input--focus { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+  .form-input--error { border-color: #dc2626; }
+  .form-textarea {
+    width: 100%; min-height: 80px; background: var(--bg); color: var(--fg);
+    border: 1px solid var(--border); padding: 12px 16px; border-radius: 10px;
+    font-family: var(--font); font-size: 15px; resize: vertical; outline: none;
+  }
+  .form-state-label { font-size: 10px; color: var(--weak); margin-top: 4px; font-weight: 500; }
+
+  /* ── Spacing ── */
+  .spacing-row { display: flex; align-items: flex-end; gap: 8px; flex-wrap: wrap; }
+  .spacing-item { text-align: center; }
+  .spacing-block { background: var(--accent); border-radius: 3px; margin-bottom: 4px; height: 20px; opacity: 0.55; transition: opacity 0.15s; }
+  .spacing-item:hover .spacing-block { opacity: 0.85; }
+  .spacing-value { font-size: 9px; color: var(--weak); font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; }
+
+  /* ── Radius ── */
+  .radius-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .radius-item { text-align: center; }
+  .radius-box { width: 52px; height: 52px; background: var(--surface); border: 1px solid var(--border); margin-bottom: 4px; transition: transform 0.15s; }
+  .radius-item:hover .radius-box { transform: scale(1.08); }
+  .radius-label { font-size: 9px; color: var(--weak); font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; }
+
+  /* ── Elevation ── */
+  .elevation-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .elevation-card { background: var(--bg); border-radius: 14px; padding: 18px; text-align: center; }
+  .elevation-label { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+  .elevation-desc { font-size: 9px; color: var(--weak); font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; line-height: 1.4; }
+
+  /* ── Footer ── */
+  .footer { padding: 28px 24px; text-align: center; border-top: 1px solid var(--border); }
+  .footer-text { font-size: 12px; color: var(--weak); }
+  .footer-text a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  .footer-text a:hover { text-decoration: underline; }
+
+  /* ── Dark Badge ── */
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 30px; }
+    .hero { padding: 48px 16px 40px; }
+    .nav-links { display: none; }
+    .section { padding: 32px 16px; }
+    .section-title { font-size: 28px; }
+    .card-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+
+<nav class="nav">
+  <a class="nav-brand" href="#">OpenStyle / moban3128</a>
+  <ul class="nav-links">
+    <li><a href="#colors">Colors</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#cards">Cards</a></li>
+    <li><a href="#forms">Forms</a></li>
+    <li><a href="#spacing">Spacing</a></li>
+    <li><a href="#radius">Radius</a></li>
+    <li><a href="#elevation">Elevation</a></li>
+  </ul>
+  <a class="nav-cta" href="#">Design System</a>
+</nav>
+
+<section class="hero">
+  <h1>Design System<br>Inspired by <span>moban3128</span></h1>
+  <p>Extracted colors, typography, spacing, and component tokens — presented as a unified design catalog.</p>
+  <div class="hero-buttons">
+    <a class="btn-primary" href="#">Get Started</a>
+    <a class="btn-outline" href="#">View Source</a>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="colors">
+  <div class="section-label">01 / Colors</div>
+  <h2 class="section-title">Color Palette</h2>
+  <div class="color-group-label">Primary</div>
+  <div class="color-grid">
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #fff; border-bottom: 1px solid var(--border);"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">White</div>
+        <div class="color-swatch-hex">#fff</div>
+      </div>
+    </div>
+  </div>
+  <div class="color-group-label">Accent</div>
+  <div class="color-grid">
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #007bff;"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">Vivid Blue</div>
+        <div class="color-swatch-hex">#007bff</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #dc3545;"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">Red</div>
+        <div class="color-swatch-hex">#dc3545</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #28a745;"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">Green</div>
+        <div class="color-swatch-hex">#28a745</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #ffc107;"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">Vivid Amber</div>
+        <div class="color-swatch-hex">#ffc107</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #17a2b8;"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">Cyan</div>
+        <div class="color-swatch-hex">#17a2b8</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #ffbf00;"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">Vivid Amber 2</div>
+        <div class="color-swatch-hex">#ffbf00</div>
+      </div>
+    </div>
+  </div>
+  <div class="color-group-label">Neutral</div>
+  <div class="color-grid">
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #fff; border-bottom: 1px solid var(--border);"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">White</div>
+        <div class="color-swatch-hex">#fff</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #6c757d;"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">Mid Gray</div>
+        <div class="color-swatch-hex">#6c757d</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #000;"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">Black</div>
+        <div class="color-swatch-hex">#000</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #212529;"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">Deep Muted Blue</div>
+        <div class="color-swatch-hex">#212529</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #dee2e6;"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">Pale Muted Blue</div>
+        <div class="color-swatch-hex">#dee2e6</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="color-swatch-block" style="background: #f8f9fa;"></div>
+      <div class="color-swatch-info">
+        <div class="color-swatch-name">Pale Muted Blue 2</div>
+        <div class="color-swatch-hex">#f8f9fa</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="typography">
+  <div class="section-label">02 / Typography</div>
+  <h2 class="section-title">Typography Scale</h2>
+  <div class="type-sample">
+    <div style="font-family: &#34;Montserrat&#34;, sans-serif; font-size: 14.0px; font-weight: 400; line-height: 1.5; letter-spacing: 1px;">
+      Display — The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">Montserrat, sans-serif — 14.0px / 400 / 1.5</div>
+  </div>
+  <div class="type-sample">
+    <div style="font-family: &#34;Shadows Into Light&#34;, cursive; font-size: 20.0px; font-weight: 600; line-height: 1; letter-spacing: 2px;">
+      Heading — The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">Shadows Into Light, cursive — 20.0px / 600 / 1</div>
+  </div>
+  <div class="type-sample">
+    <div style="font-family: -apple-system, BlinkMacSystemFont, &#34;Segoe UI&#34;, Roboto, &#34;Helvetica Neue&#34;, Arial, sans-serif, &#34;Apple Color Emoji&#34;, &#34;Segoe UI Emoji&#34;, &#34;Segoe UI Symbol&#34;; font-size: 14.0px; font-weight: 300; line-height: inherit; letter-spacing: 3px;">
+      Sub-heading — The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol — 14.0px / 300 / inherit</div>
+  </div>
+  <div class="type-sample">
+    <div style="font-family: &#34;Lobster&#34;, cursive; font-size: 16.0px; font-weight: 700; line-height: 1.2; color: var(--weak);">
+      Body — The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">Lobster, cursive — 16.0px / 700 / 1.2</div>
+  </div>
+  <div class="type-sample">
+    <div style="font-family: inherit; font-size: 16.0px; font-weight: 500; line-height: 28px; letter-spacing: 5px; color: var(--weak);">
+      Caption — The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">inherit — 16.0px / 500 / 28px</div>
+  </div>
+  <div class="type-sample">
+    <div style="font-family: sans-serif; font-size: 16.0px; font-weight: bold; line-height: 1.15; letter-spacing: 0;">
+      Button — The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">sans-serif — 16.0px / bold / 1.15</div>
+  </div>
+  <div class="type-sample">
+    <div style="font-family: sans-serif; font-size: 16.0px; font-weight: bold; line-height: 1.15; letter-spacing: 0;">
+      Mono — The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">sans-serif — 16.0px / bold / 1.15</div>
+  </div>
+  <div class="type-sample">
+    <div style="font-family: sans-serif; font-size: 24.0px; font-weight: bold; line-height: 1.15; letter-spacing: 0; color: var(--weak);">
+      Label — The quick brown fox jumps over the lazy dog
+    </div>
+    <div class="type-meta">sans-serif — 24.0px / bold / 1.15</div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="buttons">
+  <div class="section-label">03 / Buttons</div>
+  <h2 class="section-title">Buttons</h2>
+  <div class="button-row">
+    <div class="button-item">
+      <a class="btn-primary" href="#">Primary</a>
+      <div class="button-label">Accent Fill</div>
+    </div>
+    <div class="button-item">
+      <a class="btn-outline" href="#">Outlined</a>
+      <div class="button-label">Border Only</div>
+    </div>
+    <div class="button-item">
+      <a class="btn-ghost" href="#">Ghost</a>
+      <div class="button-label">Surface Fill</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="cards">
+  <div class="section-label">04 / Cards</div>
+  <h2 class="section-title">Cards</h2>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-tag">Feature</div>
+      <h3>Design Tokens</h3>
+      <p>Extracted colors, typography, and spacing from real CSS declarations for consistent theming.</p>
+    </div>
+    <div class="card">
+      <div class="card-tag">Layout</div>
+      <h3>Responsive Grid</h3>
+      <p>Auto-detected breakpoints and spacing scale ensure components adapt across devices.</p>
+    </div>
+    <div class="card">
+      <div class="card-tag">System</div>
+      <h3>Component Library</h3>
+      <p>Buttons, cards, forms, and navigation patterns derived from the source template.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="forms">
+  <div class="section-label">05 / Forms</div>
+  <h2 class="section-title">Forms</h2>
+  <div class="form-group">
+    <label class="form-label">Email</label>
+    <input class="form-input" type="email" placeholder="you@example.com">
+    <div class="form-state-label">Default</div>
+  </div>
+  <div class="form-group">
+    <label class="form-label">Workspace</label>
+    <input class="form-input form-input--focus" type="text" value="My Project">
+    <div class="form-state-label">Focus (accent ring)</div>
+  </div>
+  <div class="form-group">
+    <label class="form-label">API Key</label>
+    <input class="form-input form-input--error" type="text" value="">
+    <div class="form-state-label">Error</div>
+  </div>
+  <div class="form-group">
+    <label class="form-label">Description</label>
+    <textarea class="form-textarea" placeholder="Describe your project..."></textarea>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="spacing">
+  <div class="section-label">06 / Spacing</div>
+  <h2 class="section-title">Spacing Scale</h2>
+  <div class="spacing-row">
+    <div class="spacing-item">
+      <div class="spacing-block" style="width: 0"></div>
+      <div class="spacing-value">0</div>
+    </div>
+    <div class="spacing-item">
+      <div class="spacing-block" style="width: .75rem"></div>
+      <div class="spacing-value">.75rem</div>
+    </div>
+    <div class="spacing-item">
+      <div class="spacing-block" style="width: 0px"></div>
+      <div class="spacing-value">0px</div>
+    </div>
+    <div class="spacing-item">
+      <div class="spacing-block" style="width: .5rem"></div>
+      <div class="spacing-value">.5rem</div>
+    </div>
+    <div class="spacing-item">
+      <div class="spacing-block" style="width: 1em"></div>
+      <div class="spacing-value">1em</div>
+    </div>
+    <div class="spacing-item">
+      <div class="spacing-block" style="width: 10px"></div>
+      <div class="spacing-value">10px</div>
+    </div>
+    <div class="spacing-item">
+      <div class="spacing-block" style="width: 2em"></div>
+      <div class="spacing-value">2em</div>
+    </div>
+    <div class="spacing-item">
+      <div class="spacing-block" style="width: .7em"></div>
+      <div class="spacing-value">.7em</div>
+    </div>
+    <div class="spacing-item">
+      <div class="spacing-block" style="width: .25rem"></div>
+      <div class="spacing-value">.25rem</div>
+    </div>
+    <div class="spacing-item">
+      <div class="spacing-block" style="width: .375rem"></div>
+      <div class="spacing-value">.375rem</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="radius">
+  <div class="section-label">07 / Radius</div>
+  <h2 class="section-title">Border Radius</h2>
+  <div class="radius-row">
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius: 0.25rem"></div>
+      <div class="radius-label">0.25rem</div>
+    </div>
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius: 0"></div>
+      <div class="radius-label">0</div>
+    </div>
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius: 0.2rem"></div>
+      <div class="radius-label">0.2rem</div>
+    </div>
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius: 0.3rem"></div>
+      <div class="radius-label">0.3rem</div>
+    </div>
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius: 50%"></div>
+      <div class="radius-label">50%</div>
+    </div>
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius: 0 0.25rem 0.25rem 0"></div>
+      <div class="radius-label">0 0.25rem 0.25rem 0</div>
+    </div>
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0"></div>
+      <div class="radius-label">calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0</div>
+    </div>
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px)"></div>
+      <div class="radius-label">0 0 calc(0.25rem - 1px) calc(0.25rem - 1px)</div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<section class="section" id="elevation">
+  <div class="section-label">08 / Elevation</div>
+  <h2 class="section-title">Depth & Shadows</h2>
+  <div class="elevation-grid">
+    <div class="elevation-card" style="border: 1px solid var(--border);">
+      <div class="elevation-label">Flat</div>
+      <div class="elevation-desc">Border only</div>
+    </div>
+    <div class="elevation-card" style="box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);">
+      <div class="elevation-label">Level 1</div>
+      <div class="elevation-desc">0 0 0 0.2rem rgba(0, 123, 255, 0.25)</div>
+    </div>
+    <div class="elevation-card" style="box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);">
+      <div class="elevation-label">Level 2</div>
+      <div class="elevation-desc">0 0 0 0.2rem rgba(0, 123, 255, 0.5)</div>
+    </div>
+    <div class="elevation-card" style="box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);">
+      <div class="elevation-label">Level 3</div>
+      <div class="elevation-desc">0 0 0 0.2rem rgba(108, 117, 125, 0.5)</div>
+    </div>
+    <div class="elevation-card" style="box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);">
+      <div class="elevation-label">Level 4</div>
+      <div class="elevation-desc">0 0 0 0.2rem rgba(40, 167, 69, 0.5)</div>
+    </div>
+    <div class="elevation-card" style="box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);">
+      <div class="elevation-label">Level 5</div>
+      <div class="elevation-desc">0 0 0 0.2rem rgba(23, 162, 184, 0.5)</div>
+    </div>
+    <div class="elevation-card" style="box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);">
+      <div class="elevation-label">Level 6</div>
+      <div class="elevation-desc">0 0 0 0.2rem rgba(255, 193, 7, 0.5)</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p class="footer-text">Generated by <a href="#">OpenStyle</a> — Design System Preview for <strong>moban3128</strong></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "mapping_rules": {
+    "background": "inverse_primary",
+    "text": "inverse_text",
+    "shadow_to_glow": true,
+    "keep_accents": true
+  }
+}
