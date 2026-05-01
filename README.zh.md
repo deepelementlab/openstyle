@@ -1,7 +1,18 @@
-# OpenStyle — HTML 模板设计系统自动提取工具
+<img width="2493" height="829" alt="Screenshot - 2026-05-01 02 11 35" src="https://github.com/user-attachments/assets/995b7ce4-aba9-4bbe-a26e-6bd1a81f7a50" />
+
+<div align="center">
+  
+# OpenStyle
+
+</div>
 
 <p align="center">
   <strong>从任意 HTML/CSS 网站模板中自动提取设计令牌，生成结构化的设计规范文档与交互式预览页面。</strong>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> |
+  <a href="README.zh.md">简体中文</a>
 </p>
 
 ---
