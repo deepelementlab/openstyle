@@ -13,11 +13,11 @@
 </p>
 
 <p align="center">
-  <strong>Free UI, 50+categories, 270+design styles, covering almost all major brand types.</strong>
+  <strong>Free UI, <a href="./UI"> 50+categories </a>, <a href="./UI">270+design styles </a>, covering almost all major brand types.</strong>
 </p>
 
 <p align="center">
-  <strong>Directly import the claude code and claw code for use.</strong>
+  <strong>Directly import the <a href="https://claude.com/product/claude-code">claude code </a> and <a href="https://github.com/deepelementlab/clawcode"> claw code </a> for use.</strong>
 </p>
 
 <p align="center">
