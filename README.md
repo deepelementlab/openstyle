@@ -13,6 +13,14 @@
 </p>
 
 <p align="center">
+  <strong>Free UI, 50+categories, 270+design styles, covering almost all major brand types.</strong>
+</p>
+
+<p align="center">
+  <strong>Directly import the claude code and claw code for use.</strong>
+</p>
+
+<p align="center">
   <a href="README.md">English</a> |
   <a href="README.zh.md">简体中文</a>
 </p>
