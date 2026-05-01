@@ -1,5 +1,6 @@
 <!-- <img width="2493" height="829" alt="Screenshot - 2026-05-01 02 11 35" src="https://github.com/user-attachments/assets/995b7ce4-aba9-4bbe-a26e-6bd1a81f7a50" /> -->
-<img width="2220" height="1080" alt="openstyle 00h00m00s-00h00m05s" src="https://github.com/user-attachments/assets/e1d9a8c8-8de6-40c0-8ae5-0aff0fad996a" />
+<img width="2220" height="1080" alt="openstyle 00h00m00s-00h00m05s" src="https://github.com/user-attachments/assets/76427503-e6ec-40cd-bc07-6c4d51268946" />
+
 
 <div align="center">
   
