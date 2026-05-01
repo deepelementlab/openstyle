@@ -13,6 +13,14 @@
 </p>
 
 <p align="center">
+  <strong>免费UI，50+类别，270+设计样式，几乎涵盖所有主要品牌类型。</strong>
+</p>
+
+<p align="center">
+  <strong>一键导入 claude code 和 claw code中使用。</strong>
+</p>
+
+<p align="center">
   <a href="README.md">English</a> |
   <a href="README.zh.md">简体中文</a>
 </p>
