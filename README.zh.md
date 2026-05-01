@@ -13,11 +13,11 @@
 </p>
 
 <p align="center">
-  <strong>免费UI，50+类别，270+设计样式，几乎涵盖所有主要品牌类型。</strong>
+  <strong>免费UI，<a href="./UI">50+类别</a>，<a href="./UI">270+设计样式</a>，几乎涵盖所有主要品牌类型。</strong>
 </p>
 
 <p align="center">
-  <strong>一键导入 claude code 和 claw code中使用。</strong>
+  <strong>一键导入 <a href="https://claude.com/product/claude-code">claude code</a> 和 <a href="https://github.com/deepelementlab/clawcode">claw code</a>中使用。</strong>
 </p>
 
 <p align="center">
