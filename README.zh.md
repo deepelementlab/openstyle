@@ -188,58 +188,58 @@ OpenStyle 支持将模板按行业/类型自动分类处理，当前涵盖 **52 
 
 | 分类 | 英文名 | 说明 | 典型输出示例 |
 |------|--------|------|-------------|
-| 广告/营销 | `Advertising` | 广告公司、营销推广 | `marketing_agency_digital-promotion` |
-| 农业 | `Agriculture` | 农业种植、农产品 | — |
-| 动物/宠物 | `Animal` | 宠物店、动物保护 | `pet_shop_animal` |
-| APP 应用 | `App` | 移动应用着陆页 | `app_landing_mobile` |
-| 汽车 | `Automobile` | 汽车销售、维修保养 | `automotive_website_car-sales` |
-| 后台管理 | `Backend` | 管理面板、仪表盘 | `backend_admin_dashboard` |
-| 美容美发 | `Beauty` | 美容院、美发沙龙 | `beauty_website_salon` |
-| 博客 | `Blog` | 个人博客、内容站 | `blog_website_personal` |
-| 品牌展示 | `Brand` | 品牌官网、VI展示 | `brand_website_showcase` |
-| 商务咨询 | `Business` | 商务服务、咨询公司 | `business_website_consulting` |
-| 卡通风格 | `Cartoon` | 卡通插画、趣味设计 | `cartoon_website_illustration` |
-| 公益慈善 | `Charity` | 公益组织、基金会 | `charity_foundation_donation` |
-| 企业公司 | `Company` | 企业官网、公司介绍 | `company_website_enterprise` |
-| 建筑施工 | `Construction` | 建筑公司、工程施工 | `construction_company_building` |
-| 电子商务 | `ECommerce` | 商城、网购平台 | `ecommerce_shop_online-store` |
-| 教育培训 | `Education` | 学校、培训机构 | `education_website_training` |
-| 数码电子 | `Electronics` | 3C数码、电子产品 | `3c_website` |
-| 娱乐休闲 | `Entertainment` | 娱乐场所、休闲活动 | `entertainment_website_club` |
-| 环保绿化 | `Environmental` | 环保机构、花卉种植 | `floral_website_garden` |
-| 时尚服装 | `Fashion` | 时装设计、服装品牌 | `fashion_company` |
-| 影视视频 | `Film` | 电影、视频、影院 | `movie_website_cinema` |
-| 餐饮美食 | `Food` | 餐厅、咖啡、美食 | `restaurant_website_food` |
-| 家具家装 | `Furniture` | 家具销售、室内设计 | `furniture_website_interior` |
-| 游戏 | `Game` | 游戏公司、游戏门户 | `game_company_robo` |
-| 医疗健康 | `Healthcare` | 医院、健康服务 | `medical_website_healthcare` |
-| 主机域名 | `Hosting` | 主机商、域名注册 | `hosting_website_server` |
-| 酒店住宿 | `Hotel` | 酒店、民宿预订 | `hotel_website_booking` |
-| 家政保洁 | `Housekeeping` | 家政服务、保洁公司 | `cleaning_company_housekeeping` |
-| 投资理财 | `Investment` | 金融投资、理财 | `investment_website_finance` |
-| 母婴儿童 | `Kids` | 母婴用品、儿童教育 | `kids_website_baby` |
-| 法律律师 | `Law` | 律所、法律咨询 | `legal_website_law-firm` |
-| 登录注册 | `Login` | 登录页、注册表单 | `login_website_registration` |
-| 物流运输 | `Logistics` | 物流公司、货运 | `logistics_company_shipping` |
-| 机械工业 | `Machinery` | 机械制造、工业设备 | `industrial_website_machinery` |
-| 音乐 | `Music` | 音乐活动、演唱会 | `music_website_concert` |
-| 新闻媒体 | `News` | 新闻门户、媒体网站 | `news_website_portal` |
-| 政府/官方 | `Official` | 政府机构、官方网站 | `official_website_government` |
-| 其他 | `Other` | 综合类、多用途 | `other_website_general` |
-| 摄影 | `Photography` | 摄影工作室、相册 | `photography_website_studio` |
-| 门户网站 | `Portal` | 综合门户、导航站 | `portal_website_navigation` |
-| 产品展示 | `Product` | 产品介绍、硬件设备 | `product_website_showcase` |
-| 房地产 | `RealEstate` | 楼盘、二手房交易 | `villa_market_second-hand` |
-| 响应式 | `Responsive` | 通用响应式模板 | `responsive_website_general` |
-| 单页 | `SinglePage` | 单页着陆、活动页 | `single_landing_promotion` |
-| 体育运动 | `Sports` | 健身房、运动俱乐部 | `fitness_website_gym` |
-| 工作室 | `Studio` | 设计工作室、创意团队 | `design_website_studio` |
-| 科技 IT | `Technology` | 科技公司、软件开发 | `technology_company_software` |
-| 外贸 | `Trade` | 外贸公司、进出口 | `trade_website_export` |
-| 培训教育 | `Training` | 培训课程、教育机构 | `training_website_course` |
-| 旅游旅行 | `Travel` | 旅行社、旅游攻略 | `travel_agency_tour` |
-| 婚庆 | `Wedding` | 婚礼策划、婚纱摄影 | `wedding_website_planning` |
-| 女性专题 | `Women` | 女性门户、时尚女性 | `women_website_fashion` |
+|  <a href="./ui">广告/营销</a> | `Advertising` | 广告公司、营销推广 | `marketing_agency_digital-promotion` |
+| <a href="./ui">农业</a> | `Agriculture` | 农业种植、农产品 | — |
+| <a href="./ui">动物/宠物</a> | `Animal` | 宠物店、动物保护 | `pet_shop_animal` |
+| <a href="./ui">APP 应用</a> | `App` | 移动应用着陆页 | `app_landing_mobile` |
+| <a href="./ui">汽车</a>| `Automobile` | 汽车销售、维修保养 | `automotive_website_car-sales` |
+| <a href="./ui">后台管理</a> | `Backend` | 管理面板、仪表盘 | `backend_admin_dashboard` |
+| <a href="./ui">美容美发</a> | `Beauty` | 美容院、美发沙龙 | `beauty_website_salon` |
+| <a href="./ui">博客</a> | `Blog` | 个人博客、内容站 | `blog_website_personal` |
+| <a href="./ui">品牌展示</a> | `Brand` | 品牌官网、VI展示 | `brand_website_showcase` |
+| <a href="./ui">商务咨询</a> | `Business` | 商务服务、咨询公司 | `business_website_consulting` |
+| <a href="./ui">卡通风格</a> | `Cartoon` | 卡通插画、趣味设计 | `cartoon_website_illustration` |
+| <a href="./ui">公益慈善</a> | `Charity` | 公益组织、基金会 | `charity_foundation_donation` |
+| <a href="./ui">企业公司</a> | `Company` | 企业官网、公司介绍 | `company_website_enterprise` |
+| <a href="./ui">建筑施工</a> | `Construction` | 建筑公司、工程施工 | `construction_company_building` |
+| <a href="./ui">电子商务</a> | `ECommerce` | 商城、网购平台 | `ecommerce_shop_online-store` |
+| <a href="./ui">教育培训</a> | `Education` | 学校、培训机构 | `education_website_training` |
+| <a href="./ui">数码电子</a> | `Electronics` | 3C数码、电子产品 | `3c_website` |
+| <a href="./ui">娱乐休闲</a> | `Entertainment` | 娱乐场所、休闲活动 | `entertainment_website_club` |
+| <a href="./ui">环保绿化</a> | `Environmental` | 环保机构、花卉种植 | `floral_website_garden` |
+| <a href="./ui">时尚服装</a> | `Fashion` | 时装设计、服装品牌 | `fashion_company` |
+| <a href="./ui">影视视频</a> | `Film` | 电影、视频、影院 | `movie_website_cinema` |
+| <a href="./ui">餐饮美食</a> | `Food` | 餐厅、咖啡、美食 | `restaurant_website_food` |
+| <a href="./ui">家具家装</a> | `Furniture` | 家具销售、室内设计 | `furniture_website_interior` |
+| <a href="./ui">游戏</a> | `Game` | 游戏公司、游戏门户 | `game_company_robo` |
+| <a href="./ui">医疗健康</a> | `Healthcare` | 医院、健康服务 | `medical_website_healthcare` |
+| <a href="./ui">主机域名</a> | `Hosting` | 主机商、域名注册 | `hosting_website_server` |
+| <a href="./ui">酒店住宿</a> | `Hotel` | 酒店、民宿预订 | `hotel_website_booking` |
+| <a href="./ui">家政保洁</a> | `Housekeeping` | 家政服务、保洁公司 | `cleaning_company_housekeeping` |
+| <a href="./ui">投资理财</a> | `Investment` | 金融投资、理财 | `investment_website_finance` |
+| <a href="./ui">母婴儿童</a> | `Kids` | 母婴用品、儿童教育 | `kids_website_baby` |
+| <a href="./ui">法律律师</a> | `Law` | 律所、法律咨询 | `legal_website_law-firm` |
+| <a href="./ui">登录注册</a> | `Login` | 登录页、注册表单 | `login_website_registration` |
+| <a href="./ui">物流运输</a> | `Logistics` | 物流公司、货运 | `logistics_company_shipping` |
+| <a href="./ui">机械工业</a> | `Machinery` | 机械制造、工业设备 | `industrial_website_machinery` |
+| <a href="./ui">音乐</a> | `Music` | 音乐活动、演唱会 | `music_website_concert` |
+| <a href="./ui">新闻媒体</a> | `News` | 新闻门户、媒体网站 | `news_website_portal` |
+| <a href="./ui">政府/官方</a> | `Official` | 政府机构、官方网站 | `official_website_government` |
+| <a href="./ui">其他</a> | `Other` | 综合类、多用途 | `other_website_general` |
+| <a href="./ui">摄影</a> | `Photography` | 摄影工作室、相册 | `photography_website_studio` |
+| <a href="./ui">门户网站</a> | `Portal` | 综合门户、导航站 | `portal_website_navigation` |
+| <a href="./ui">产品展示</a> | `Product` | 产品介绍、硬件设备 | `product_website_showcase` |
+| <a href="./ui">房地产</a> | `RealEstate` | 楼盘、二手房交易 | `villa_market_second-hand` |
+| <a href="./ui">响应式</a> | `Responsive` | 通用响应式模板 | `responsive_website_general` |
+| <a href="./ui">单页</a> | `SinglePage` | 单页着陆、活动页 | `single_landing_promotion` |
+| <a href="./ui">体育运动</a> | `Sports` | 健身房、运动俱乐部 | `fitness_website_gym` |
+| <a href="./ui">工作室</a> | `Studio` | 设计工作室、创意团队 | `design_website_studio` |
+| <a href="./ui">科技 IT</a> | `Technology` | 科技公司、软件开发 | `technology_company_software` |
+| <a href="./ui">外贸</a>| `Trade` | 外贸公司、进出口 | `trade_website_export` |
+| <a href="./ui">培训教育</a> | `Training` | 培训课程、教育机构 | `training_website_course` |
+| <a href="./ui">旅游旅行</a> | `Travel` | 旅行社、旅游攻略 | `travel_agency_tour` |
+| <a href="./ui">婚庆</a> | `Wedding` | 婚礼策划、婚纱摄影 | `wedding_website_planning` |
+| <a href="./ui">女性专题</a> | `Women` | 女性门户、时尚女性 | `women_website_fashion` |
 
 ---
 
@@ -365,4 +365,4 @@ pytest -q
 
 ## 许可
 
-本项目仅供学习和研究使用。提取的设计令牌来源于公开的 HTML 模板，原始模板版权归原作者所有。
+ [MIT License](LICENSE).
