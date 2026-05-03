@@ -190,58 +190,58 @@ OpenStyle supports categorized template processing across **52 categories**, cov
 
 | Category | Directory Name | Description | Example Output |
 |----------|---------------|-------------|----------------|
-| Advertising | `Advertising` | Ad agencies, marketing promotions | `marketing_agency_digital-promotion` |
-| Agriculture | `Agriculture` | Farming, agricultural products | — |
-| Animals & Pets | `Animal` | Pet shops, animal welfare | `pet_shop_animal` |
-| App Landing | `App` | Mobile app landing pages | `app_landing_mobile` |
-| Automobile | `Automobile` | Car sales, auto repair | `automotive_website_car-sales` |
-| Backend / Admin | `Backend` | Admin panels, dashboards | `backend_admin_dashboard` |
-| Beauty & Salon | `Beauty` | Beauty salons, hair studios | `beauty_website_salon` |
-| Blog | `Blog` | Personal blogs, content sites | `blog_website_personal` |
-| Brand Showcase | `Brand` | Brand websites, VI displays | `brand_website_showcase` |
-| Business Consulting | `Business` | Business services, consulting firms | `business_website_consulting` |
-| Cartoon Style | `Cartoon` | Cartoon illustrations, fun design | `cartoon_website_illustration` |
-| Charity | `Charity` | Non-profits, foundations | `charity_foundation_donation` |
-| Corporate | `Company` | Company websites, corporate profiles | `company_website_enterprise` |
-| Construction | `Construction` | Building companies, engineering | `construction_company_building` |
-| E-Commerce | `ECommerce` | Online shops, marketplaces | `ecommerce_shop_online-store` |
-| Education | `Education` | Schools, training institutions | `education_website_training` |
-| Electronics | `Electronics` | 3C digital, consumer electronics | `3c_website` |
-| Entertainment | `Entertainment` | Venues, leisure activities | `entertainment_website_club` |
-| Environmental | `Environmental` | Green organizations, floristry | `floral_website_garden` |
-| Fashion | `Fashion` | Fashion design, clothing brands | `fashion_company` |
-| Film & Video | `Film` | Movies, video production, cinemas | `movie_website_cinema` |
-| Food & Restaurant | `Food` | Restaurants, cafés, food & beverage | `restaurant_website_food` |
-| Furniture | `Furniture` | Furniture sales, interior design | `furniture_website_interior` |
-| Gaming | `Game` | Game studios, gaming portals | `game_company_robo` |
-| Healthcare | `Healthcare` | Hospitals, health services | `medical_website_healthcare` |
-| Hosting & Domains | `Hosting` | Web hosting, domain registration | `hosting_website_server` |
-| Hotel & Hospitality | `Hotel` | Hotels, B&B bookings | `hotel_website_booking` |
-| Housekeeping | `Housekeeping` | Cleaning services, maid agencies | `cleaning_company_housekeeping` |
-| Investment & Finance | `Investment` | Financial investment, wealth management | `investment_website_finance` |
-| Kids & Baby | `Kids` | Baby products, children's education | `kids_website_baby` |
-| Law & Legal | `Law` | Law firms, legal consulting | `legal_website_law-firm` |
-| Login & Registration | `Login` | Login pages, signup forms | `login_website_registration` |
-| Logistics & Shipping | `Logistics` | Logistics companies, freight transport | `logistics_company_shipping` |
-| Machinery & Industrial | `Machinery` | Manufacturing, industrial equipment | `industrial_website_machinery` |
-| Music | `Music` | Music events, concerts | `music_website_concert` |
-| News & Media | `News` | News portals, media sites | `news_website_portal` |
-| Official / Government | `Official` | Government agencies, official websites | `official_website_government` |
-| Other / General | `Other` | Multi-purpose, general use | `other_website_general` |
-| Photography | `Photography` | Photo studios, galleries | `photography_website_studio` |
-| Portal | `Portal` | Web portals, directory sites | `portal_website_navigation` |
-| Product Showcase | `Product` | Product pages, hardware devices | `product_website_showcase` |
-| Real Estate | `RealEstate` | Property listings, real estate agencies | `villa_market_second-hand` |
-| Responsive | `Responsive` | General-purpose responsive templates | `responsive_website_general` |
-| Single Page | `SinglePage` | Landing pages, campaign pages | `single_landing_promotion` |
-| Sports & Fitness | `Sports` | Gyms, sports clubs | `fitness_website_gym` |
-| Studio / Creative | `Studio` | Design studios, creative teams | `design_website_studio` |
-| Technology & IT | `Technology` | Tech companies, software development | `technology_company_software` |
-| Trade / Export | `Trade` | Trading companies, import/export | `trade_website_export` |
-| Training & Courses | `Training` | Training programs, educational courses | `training_website_course` |
-| Travel & Tourism | `Travel` | Travel agencies, tourism guides | `travel_agency_tour` |
-| Wedding | `Wedding` | Wedding planning, bridal photography | `wedding_website_planning` |
-| Women's Interest | `Women` | Women's portals, fashion & lifestyle | `women_website_fashion` |
+| <a href="./UI/Advertising">Advertising</a> | `Advertising` | Ad agencies, marketing promotions | `marketing_agency_digital-promotion` |
+| <a href="./UI/">Agriculture</a> | `Agriculture` | Farming, agricultural products | — |
+| <a href="./UI/">Animals & Pets</a> | `Animal` | Pet shops, animal welfare | `pet_shop_animal` |
+| <a href="./UI/">App Landing</a> | `App` | Mobile app landing pages | `app_landing_mobile` |
+| <a href="./UI/">Automobile</a> | `Automobile` | Car sales, auto repair | `automotive_website_car-sales` |
+| <a href="./UI/">Backend / Admin</a> | `Backend` | Admin panels, dashboards | `backend_admin_dashboard` |
+| <a href="./UI/">Beauty & Salon</a> | `Beauty` | Beauty salons, hair studios | `beauty_website_salon` |
+| <a href="./UI/">Blog</a> | `Blog` | Personal blogs, content sites | `blog_website_personal` |
+| <a href="./UI/">Brand Showcase</a> | `Brand` | Brand websites, VI displays | `brand_website_showcase` |
+| <a href="./UI/">Business Consulting</a> | `Business` | Business services, consulting firms | `business_website_consulting` |
+| <a href="./UI/">Cartoon Style</a> | `Cartoon` | Cartoon illustrations, fun design | `cartoon_website_illustration` |
+| <a href="./UI/">Charity</a> | `Charity` | Non-profits, foundations | `charity_foundation_donation` |
+| <a href="./UI/">Corporate</a> | `Company` | Company websites, corporate profiles | `company_website_enterprise` |
+| <a href="./UI/">Construction</a> | `Construction` | Building companies, engineering | `construction_company_building` |
+| <a href="./UI/">E-Commerce</a> | `ECommerce` | Online shops, marketplaces | `ecommerce_shop_online-store` |
+| <a href="./UI/">Education</a> | `Education` | Schools, training institutions | `education_website_training` |
+| <a href="./UI/">Electronics</a> | `Electronics` | 3C digital, consumer electronics | `3c_website` |
+| <a href="./UI/">Entertainment</a> | `Entertainment` | Venues, leisure activities | `entertainment_website_club` |
+| <a href="./UI/">Environmental</a> | `Environmental` | Green organizations, floristry | `floral_website_garden` |
+| <a href="./UI/">Fashion</a> | `Fashion` | Fashion design, clothing brands | `fashion_company` |
+| <a href="./UI/">Film & Video</a> | `Film` | Movies, video production, cinemas | `movie_website_cinema` |
+| <a href="./UI/">Food & Restaurant</a> | `Food` | Restaurants, cafés, food & beverage | `restaurant_website_food` |
+| <a href="./UI/">Furniture</a> | `Furniture` | Furniture sales, interior design | `furniture_website_interior` |
+| <a href="./UI/">Gaming</a> | `Game` | Game studios, gaming portals | `game_company_robo` |
+| <a href="./UI/">Healthcare</a> | `Healthcare` | Hospitals, health services | `medical_website_healthcare` |
+| <a href="./UI/">Hosting & Domains</a> | `Hosting` | Web hosting, domain registration | `hosting_website_server` |
+| <a href="./UI/">Hotel & Hospitality</a> | `Hotel` | Hotels, B&B bookings | `hotel_website_booking` |
+| <a href="./UI/">Housekeeping</a> | `Housekeeping` | Cleaning services, maid agencies | `cleaning_company_housekeeping` |
+| <a href="./UI/">Investment & Finance</a> | `Investment` | Financial investment, wealth management | `investment_website_finance` |
+| <a href="./UI/">Kids & Baby</a> | `Kids` | Baby products, children's education | `kids_website_baby` |
+| <a href="./UI/">Law & Legal</a> | `Law` | Law firms, legal consulting | `legal_website_law-firm` |
+| <a href="./UI/">Login & Registration</a> | `Login` | Login pages, signup forms | `login_website_registration` |
+| <a href="./UI/">Logistics & Shipping</a> | `Logistics` | Logistics companies, freight transport | `logistics_company_shipping` |
+| <a href="./UI/">Machinery & Industrial</a> | `Machinery` | Manufacturing, industrial equipment | `industrial_website_machinery` |
+| <a href="./UI/">Music</a> | `Music` | Music events, concerts | `music_website_concert` |
+| <a href="./UI/">News & Media</a> | `News` | News portals, media sites | `news_website_portal` |
+| <a href="./UI/">Official / Government</a> | `Official` | Government agencies, official websites | `official_website_government` |
+| <a href="./UI/">Other / General</a> | `Other` | Multi-purpose, general use | `other_website_general` |
+| <a href="./UI/">Photography</a> | `Photography` | Photo studios, galleries | `photography_website_studio` |
+| <a href="./UI/">Portal</a> | `Portal` | Web portals, directory sites | `portal_website_navigation` |
+| <a href="./UI/">Product Showcase</a> | `Product` | Product pages, hardware devices | `product_website_showcase` |
+| <a href="./UI/">Real Estate</a> | `RealEstate` | Property listings, real estate agencies | `villa_market_second-hand` |
+| <a href="./UI/">Responsive</a> | `Responsive` | General-purpose responsive templates | `responsive_website_general` |
+| <a href="./UI/">Single Page</a> | `SinglePage` | Landing pages, campaign pages | `single_landing_promotion` |
+| <a href="./UI/">Sports & Fitness</a> | `Sports` | Gyms, sports clubs | `fitness_website_gym` |
+| <a href="./UI/">Studio / Creative</a> | `Studio` | Design studios, creative teams | `design_website_studio` |
+| <a href="./UI/">Technology & IT</a> | `Technology` | Tech companies, software development | `technology_company_software` |
+| <a href="./UI/">Trade / Export</a> | `Trade` | Trading companies, import/export | `trade_website_export` |
+| <a href="./UI/">Training & Courses</a> | `Training` | Training programs, educational courses | `training_website_course` |
+| <a href="./UI/">Travel & Tourism</a> | `Travel` | Travel agencies, tourism guides | `travel_agency_tour` |
+| <a href="./UI/">Wedding</a> | `Wedding` | Wedding planning, bridal photography | `wedding_website_planning` |
+| <a href="./UI/">Women's Interest</a> | `Women` | Women's portals, fashion & lifestyle | `women_website_fashion` |
 
 ---
 
@@ -367,4 +367,5 @@ Light Token                   Dark Token
 
 ## License
 
-This project is for learning and research purposes only. Extracted design tokens are derived from publicly available HTML templates. Original template copyrights belong to their respective authors.
+ [MIT License](LICENSE).
+ 
